@@ -1,0 +1,173 @@
+- !<Material/352b9a0a-7a7d-442a-9819-472db0dfb7ba>
+  PassesInfo:
+    - !<own> ea609903-e95c-4fde-a388-c37bbcb6be91
+  Name: ""
+- !<PassInfo/ea609903-e95c-4fde-a388-c37bbcb6be91>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - DROPLIST_BACK_CAP_MODE 2
+    - DROPLIST_FRONT_CAP_MODE 2
+    - DROPLIST_INNER_EDGE_MODE 1
+    - DROPLIST_OUTER_EDGE_MODE 1
+    - NODE_11_DROPLIST_ITEM 0
+    - NODE_151_DROPLIST_ITEM 0
+    - NODE_41_DROPLIST_ITEM 0
+    - NODE_9_DROPLIST_ITEM 0
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    InnerEdgeEndingColor:
+      typeIdx: 5
+      value: {x: 0.99000000953674316, y: 0.81999999284744263, z: 0.10000000149011612, w: 1}
+    InnerEdgeGradientRamp:
+      typeIdx: 1
+      value: 0
+    InnerEdgeStartingColor:
+      typeIdx: 5
+      value: {x: 0.12999999523162842, y: 1, z: 0.81999999284744263, w: 1}
+    Port_Center_N025:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    Port_Center_N047:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    Port_Default_N010:
+      typeIdx: 5
+      value: {x: 0, y: 0, z: 0, w: 0}
+    Port_Default_N046:
+      typeIdx: 5
+      value: {x: 0, y: 0, z: 0, w: 0}
+    Port_Default_N077:
+      typeIdx: 5
+      value: {x: 0, y: 0, z: 0, w: 0}
+    Port_Default_N146:
+      typeIdx: 5
+      value: {x: 0, y: 0, z: 0, w: 0}
+    Port_Import_N017:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    Port_Import_N024:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    Port_Import_N026:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    Port_Import_N058:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    Port_Input0_N035:
+      typeIdx: 1
+      value: 0
+    Port_Input0_N066:
+      typeIdx: 1
+      value: 0
+    Port_Input1_N014:
+      typeIdx: 1
+      value: 0.5
+    Port_Input1_N034:
+      typeIdx: 1
+      value: 0
+    Port_Input1_N035:
+      typeIdx: 1
+      value: 0
+    Port_Input1_N043:
+      typeIdx: 1
+      value: 0.25
+    Port_Input1_N054:
+      typeIdx: 1
+      value: 0.5
+    Port_Input1_N065:
+      typeIdx: 1
+      value: 0
+    Port_Input1_N066:
+      typeIdx: 1
+      value: 0
+    Port_Input2_N034:
+      typeIdx: 1
+      value: 0
+    Port_Input2_N065:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxA_N023:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxA_N033:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxA_N153:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxA_N155:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxB_N023:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxB_N033:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxB_N153:
+      typeIdx: 1
+      value: 0
+    Port_RangeMaxB_N155:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinA_N023:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinA_N033:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinA_N153:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinA_N155:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinB_N023:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinB_N033:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinB_N153:
+      typeIdx: 1
+      value: 0
+    Port_RangeMinB_N155:
+      typeIdx: 1
+      value: 0
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    backCapStartingColor:
+      typeIdx: 5
+      value: {x: 0.99000000953674316, y: 0.81999999284744263, z: 0.10000000149011612, w: 1}
+    frontCapStartingColor:
+      typeIdx: 5
+      value: {x: 0.12999999523162842, y: 1, z: 0.81999999284744263, w: 1}
+    outerEdgeEndingColor:
+      typeIdx: 5
+      value: {x: 0.99000000953674316, y: 0.81999999284744263, z: 0.10000000149011612, w: 1}
+    outerEdgeGradientRamp:
+      typeIdx: 1
+      value: 0
+    outerEdgeStartingColor:
+      typeIdx: 5
+      value: {x: 0.12999999523162842, y: 1, z: 0.81999999284744263, w: 1}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> b9a9a510-cd7f-4a9a-8e0c-b413c04a7cab

@@ -1,0 +1,40 @@
+- !<AssetImportMetadata/2989ad4e-f5d8-459d-8e0c-23e676be9beb>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/06dc447d-9a50-4f6f-bb44-0c8e059a8ad2>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      audio: false
+      autoStyleSelector: false
+      previewTTS: false
+      previewText: false
+      tts: false
+      voiceName: false
+      voicePace: false
+      voiceStyleSam: false
+      voiceStyleSasha: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - tts: !<reference.TextToSpeechModule> 00000000-0000-0000-0000-000000000000
+        audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+        autoStyleSelector: false
+        voiceName: ""
+        voiceStyleSasha: 0
+        voiceStyleSam: 0
+        voicePace: !<float> 0
+        previewTTS: false
+        previewText: ""
+  ImportedAssetIds:
+    JavaScriptAsset: d087140e-10c0-4b63-a9ef-ccd4a3cf669f
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> d087140e-10c0-4b63-a9ef-ccd4a3cf669f
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

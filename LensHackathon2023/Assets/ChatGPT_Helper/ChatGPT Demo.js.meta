@@ -1,0 +1,26 @@
+- !<AssetImportMetadata/a7589b98-71d1-45b4-a20e-8688f0e6f455>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/24581538-f072-4f89-aded-875b0ecde4c0>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      question: false
+      textDisplay: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - question: What are some ideas for Lenses?
+        textDisplay: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+  ImportedAssetIds:
+    JavaScriptAsset: 1cf62305-6d6c-436d-8c21-0bb7454adcbc
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 1cf62305-6d6c-436d-8c21-0bb7454adcbc
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
