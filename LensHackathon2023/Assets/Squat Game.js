@@ -1,8 +1,11 @@
 //@input SceneObject playerOneTrackingPoint
 //@input SceneObject playerTwoTrackingPoint
+//@input SceneObject playerOneMarker
+//@input SceneObject playerTwoMarker
 //@input Component.Camera perspectiveCamera
-//@input Component.ScreenTransform playerOneMarker
-//@input Component.ScreenTransform playerTwoMarker
+//@input Component.Text playerOneText
+//@input Component.Text playerTwoText
+
 
 var isReady = false
 var playing = false
@@ -10,55 +13,70 @@ var winner = null
 
 var playerOneTransform
 var playerTwoTransform
-
-var playerOneMarkerTransform
-var playerTwoMarkerTransform 
+var yFactor = new vec3(0, 1, 0)
 
 // TODO Add countdown timer
 
-script.createEvent("OnStartEvent").bind(function() {
-    playerOneTransform = script.playerOneTrackingPoint.getTransform()
-    playerTwoTransform = script.playerTwoTrackingPoint.getTransform()
-    
-    
-    //script.screenTransform.anchors.setCenter(new vec2(-0.25, 0.5)
+script.createEvent("OnStartEvent").bind(function () {
+  playerOneTransform = script.playerOneTrackingPoint.getTransform()
+  playerTwoTransform = script.playerTwoTrackingPoint.getTransform()
 })
 
-script.createEvent("UpdateEvent").bind(function() {
-    // bind screen image to head tracking
+script.createEvent("UpdateEvent").bind(function () {
+  if (playing) {
+    var playerOnePos = playerOneTransform.getWorldPosition()
+    var playerTwoPos = playerTwoTransform.getWorldPosition()
+
+    var playerOneMarkerPos = script.playerOneMarker.getTransform().getWorldPosition()
+    var playerTwoMarkerPos = script.playerTwoMarker.getTransform().getWorldPosition()
+
+    // compare the Y values of playerOnePos and PlayeroneMarkerPos
+    // if playerOnePos is lower than playerOneMarkerPos, then playerOne is squatting
+    // if playerone is higher than playerOneMarkerPos, then playerOne loses the game
+    const playerOneY = playerOnePos.y
+    const playerOneMarkerY = playerOneMarkerPos.y
+    const playerTwoY = playerTwoPos.y
+    const playerTwoMarkerY = playerTwoMarkerPos.y
+
+    if (playerOneY > playerOneMarkerY) {
+      print('p1 loses')
+      // print(playerOneY)
+      // print(playerOneMarkerY)
+      // playerOne loses
+      playing = false
+      winner = "Player Two"
+      script.playerTwoText.text = "Player Two Wins!"
+      script.playerOneText.text = "LOSER!"
+      // do winning thing!!!
+    }
+
+    if (playerTwoY > playerTwoMarkerY) {
+      print("p2 loses")
+      // playerOne loses
+      playing = false
+      winner = "Player One"
+      script.playerTwoText.text = "Loser!"
+      script.playerOneText.text = "Player One Wins!"
+      // do winning thing!!!
+    }
+  }
+
 })
 
-var delayEvent = script.createEvent("DelayedCallbackEvent")
-
-delayEvent.bind(function() {
-    print('bruuuh')
-    playing = true
-    setUp()
-  
-})
 
 function setUp() {
-    // pin bar to start pos
-    
-    var playerOneScreenTransform = script.perspectiveCamera.worldSpaceToScreenSpace(playerOneTransform.getWorldPosition())
-    var playerTwoScreenTransform = script.perspectiveCamera.worldSpaceToScreenSpace(playerTwoTransform.getWorldPosition())
-          
+  // pin bar to start pos    
+
+  //script.screenTransform.anchors.setCenter(new vec2(-0.25, 0.5)
+  script.playerOneMarker.enabled = true
+  script.playerTwoMarker.enabled = true
+  script.playerOneMarker.getTransform().setWorldPosition(playerOneTransform.getWorldPosition().add(yFactor))
+  script.playerTwoMarker.getTransform().setWorldPosition(playerTwoTransform.getWorldPosition().add(yFactor))
+  playing = true
 }
 
-delayEvent.reset(2)
-
 function onCountdownComplete() {
-    //
-    // ------ EDIT ME: Add your own behavior here
-    //
-
-    playing = true
-    
-    // Pin bar to head start
-    
-    // show a message that says "Go" xw
-    
-    print("Countdown complete!");
+  setUp()
 }
 
 script.api.onCountdownComplete = onCountdownComplete;

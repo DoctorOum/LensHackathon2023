@@ -377,7 +377,7 @@
       value: 0
     shapeWidthX:
       typeIdx: 1
-      value: 0.30000001192092896
+      value: 1
     xLeftPin:
       typeIdx: 2
       value: false

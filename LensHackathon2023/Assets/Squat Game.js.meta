@@ -13,8 +13,10 @@
     ScriptInputsHidden:
       perspectiveCamera: false
       playerOneMarker: false
+      playerOneText: false
       playerOneTrackingPoint: false
       playerTwoMarker: false
+      playerTwoText: false
       playerTwoTrackingPoint: false
     ScriptTypesHidden:
       {}

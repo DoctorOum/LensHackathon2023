@@ -1,0 +1,69 @@
+- !<Material/56a6bfd5-45a3-4302-b355-d02211b16aa7>
+  PassesInfo:
+    - !<own> f6a02eaf-ade6-43d7-8fa5-13a8f564f4b1
+  Name: ""
+- !<PassInfo/f6a02eaf-ade6-43d7-8fa5-13a8f564f4b1>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - ENABLE_BASE_TEX
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    Port_AO_N006:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    Port_Emissive_N006:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_SpecularAO_N006:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 0.88593882322311401, y: 0.99800103902816772, z: 0.31688410043716431, w: 1}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: cb1f9f3b-f434-453a-81fc-0783f9aaed62
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallic:
+      typeIdx: 1
+      value: 0.20999999344348907
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    roughness:
+      typeIdx: 1
+      value: 0.87999999523162842
+  Pass: !<reference> 0c87fc12-96db-482a-8304-eedfd9aa62aa

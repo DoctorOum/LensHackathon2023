@@ -365,7 +365,7 @@
       value: 1
     shapeColor:
       typeIdx: 5
-      value: {x: 1, y: 0.75294119119644165, z: 0.18039216101169586, w: 1}
+      value: {x: 0.23976501822471619, y: 0.33177691698074341, z: 0.97079426050186157, w: 1}
     shapeHeightY:
       typeIdx: 1
       value: 0.039999999105930328
@@ -377,7 +377,7 @@
       value: 0
     shapeWidthX:
       typeIdx: 1
-      value: 1
+      value: 0.40000000596046448
     xLeftPin:
       typeIdx: 2
       value: false

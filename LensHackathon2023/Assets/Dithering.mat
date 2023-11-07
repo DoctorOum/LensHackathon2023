@@ -1,0 +1,121 @@
+- !<Material/19a62380-baaa-41e2-8996-700e8d0bb55b>
+  PassesInfo:
+    - !<own> c8329a66-5dd4-40b8-8b71-c1a7828086a8
+  Name: ""
+- !<PassInfo/c8329a66-5dd4-40b8-8b71-c1a7828086a8>
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - NODE_15_DROPLIST_ITEM 0
+    - COLOR_MODE 0
+  BlendMode: Disabled
+  Properties:
+    Port_Item0_N069:
+      typeIdx: 1
+      value: 0
+    Port_Item10_N069:
+      typeIdx: 1
+      value: 1
+    Port_Item11_N069:
+      typeIdx: 1
+      value: 9
+    Port_Item12_N069:
+      typeIdx: 1
+      value: 15
+    Port_Item13_N069:
+      typeIdx: 1
+      value: 7
+    Port_Item14_N069:
+      typeIdx: 1
+      value: 13
+    Port_Item15_N069:
+      typeIdx: 1
+      value: 5
+    Port_Item1_N069:
+      typeIdx: 1
+      value: 8
+    Port_Item2_N069:
+      typeIdx: 1
+      value: 2
+    Port_Item3_N069:
+      typeIdx: 1
+      value: 10
+    Port_Item4_N069:
+      typeIdx: 1
+      value: 12
+    Port_Item5_N069:
+      typeIdx: 1
+      value: 4
+    Port_Item6_N069:
+      typeIdx: 1
+      value: 14
+    Port_Item7_N069:
+      typeIdx: 1
+      value: 6
+    Port_Item8_N069:
+      typeIdx: 1
+      value: 3
+    Port_Item9_N069:
+      typeIdx: 1
+      value: 11
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    colortint:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    contrast:
+      typeIdx: 0
+      value: 5
+    ditheringSize:
+      typeIdx: 1
+      value: 1
+    intensity:
+      typeIdx: 1
+      value: 0.5
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    screenTexture:
+      typeIdx: 9
+      value:
+        id: 6913c7d4-3b0b-4ac3-bcdd-71b6daad6dad
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: ClampToEdge
+          wrapModeV: ClampToEdge
+          wrapModeW: ClampToEdge
+          borderColor: {x: 1, y: 1, z: 1, w: 1}
+          mipmaps: false
+    screenTextureBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    screenTextureDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    screenTextureSize:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    screenTextureTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    screenTextureUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+  Pass: !<reference> 5b8fb2d0-e318-4993-9732-60a090117bf2
