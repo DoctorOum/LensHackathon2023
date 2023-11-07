@@ -14,21 +14,8 @@
     scale: {x: 1, y: 1, z: 1}
   Children:
     - !<own> e2911d5d-4e9c-463d-84b2-e773ee399a55
-    - !<own> d49fc557-3e3a-4736-b579-e48c5ea2454a
   Components:
     []
-  PrefabRemaps:
-    []
-- !<ScriptComponent/1b9b9014-1294-4499-9bfe-b8436e5561aa>
-  ScriptAsset: !<reference> d9d5a053-0e13-4593-9c9f-0ed3ed2bdbd4
-  ScriptInputs:
-    "":
-      text: Provide any text input
-  ScriptTypes:
-    "":
-      {}
-  Name: TTSExample[DELETE_ME]
-  Enabled: true
   PrefabRemaps:
     []
 - !<AudioComponent/89d7aba8-268f-4619-924e-56a74261abb3>
@@ -54,10 +41,10 @@
     "":
       tts: !<reference.TextToSpeechModule> 0adebb06-b490-46f4-8338-cc1099293e0d
       audio: !<reference.AudioComponent> 89d7aba8-268f-4619-924e-56a74261abb3
-      autoStyleSelector: true
-      voiceName: Sasha
+      autoStyleSelector: false
+      voiceName: Sam
       voiceStyleSasha: 1
-      voiceStyleSam: 1
+      voiceStyleSam: 2
       voicePace: !<float> 1
       previewTTS: false
       previewText: Show me you love cats without telling me you love cats
@@ -66,20 +53,6 @@
       {}
   Name: TTSController
   Enabled: true
-  PrefabRemaps:
-    []
-- !<SceneObject/d49fc557-3e3a-4736-b579-e48c5ea2454a>
-  Name: TTS Example [DELETE_ME]
-  Enabled: true
-  Layer: 0
-  LocalTransform:
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 1, y: 1, z: 1}
-  Children:
-    []
-  Components:
-    - !<own> 1b9b9014-1294-4499-9bfe-b8436e5561aa
   PrefabRemaps:
     []
 - !<SceneObject/e2911d5d-4e9c-463d-84b2-e773ee399a55>
