@@ -7,7 +7,7 @@ sceneId: 1e4cae11-cf66-49fa-b479-1f6bf46388cc
 viewConfig:
   simulation:
     device: No Simulation
-    cameraFov: .nan
+    cameraFov: 66.519996643066406
     fullFrameAspect: .nan
     viewport: Normal
     output: Live

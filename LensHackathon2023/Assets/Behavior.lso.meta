@@ -1,0 +1,13 @@
+- !<AssetImportMetadata/42960d0c-16ba-4528-96f3-9479c70060a3>
+  ImporterSettings: !<AssetImporterSettings/25fc64d1-f907-4112-9ae1-e92341bda848>
+    {}
+  ImportedAssetIds:
+    00060934-85be-f9f8-0000-000000001aa2: 5bd6b48e-ca36-4ef1-ab92-98d356f656b4
+    00060934-85be-fb00-0000-000000001aa3: a9187987-9eb0-4424-a950-d3f20e7e3b2c
+    Behavior: c0812cdb-f92f-45ad-87e9-9417602deeee
+    Scene: 6a1e7841-f6fe-4807-95b4-42aa1aed9943
+    ffffffff-ffff-ffd6-0000-000000000001: e89ae987-9dc4-4642-9440-72ad1bd546f5
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 6a1e7841-f6fe-4807-95b4-42aa1aed9943
+  PackageType: ShouldBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

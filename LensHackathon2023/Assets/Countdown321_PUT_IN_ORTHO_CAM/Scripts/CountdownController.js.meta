@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/cfebefee-8564-4cf9-bc19-47fab12a592b>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/4febacac-b0e6-4125-b6ea-1e6778dfe700>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      callApiFunc: false
+      endColor: false
+      endSize: false
+      interval: false
+      numberText: false
+      onCompleteFunction: false
+      onCompleteTrigger: false
+      playOnStart: false
+      scriptWithApi: false
+      startColor: false
+      startNumber: false
+      startSize: false
+      useBehavior: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - playOnStart: false
+        numberText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+        startNumber: 3
+        startSize: 100
+        endSize: 350
+        interval: !<float> 1
+        startColor: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        endColor: !<Vec4> {x: 0, y: 0, z: 0, w: 0}
+        useBehavior: false
+        onCompleteTrigger: ON_COMPLETE
+        callApiFunc: false
+        scriptWithApi: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+        onCompleteFunction: onComplete
+  ImportedAssetIds:
+    JavaScriptAsset: 6a02b19b-14d8-4732-b2fa-e22164125d19
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 6a02b19b-14d8-4732-b2fa-e22164125d19
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
