@@ -1,5 +1,6 @@
 // @input string question = "What are some ideas for Lenses?"
 // @input Component.Text3D textDisplay
+// @input string[] splitPrompt
 
 const request = { 
     "temperature": 1,
@@ -16,22 +17,31 @@ function requestGPT() {
             const mainAnswer = response.choices[0].message.content;
             print(mainAnswer);
             script.textDisplay.text = mainAnswer;
+            splitPromptToSentences(mainAnswer)
+            //readGPT();
         } else {
             print(JSON.stringify(response));
         }
     })
 }
 
-function readGPT()
-{
+function readGPT(text) {
     if(script.textDisplay.text!==""){
-    global.getTTSResults(script.textDisplay.text); 
-}else{
-    print("ERROR: Please input TTS Text");
+        global.getTTSResults(script.textDisplay.text); 
+    } else {
+        print("ERROR: Please input TTS Text");
+    }
 }
+
+function splitPromptToSentences(text) {
+    script.splitPrompt = text.match( /[^\.!\?]+[\.!\?]+/g );
+    
+    for (let i = 0; i < script.splitPrompt.length; i++) {
+        readGPT(script.splitPrompt[i].text);
+    }
 }
 
 script.createEvent("OnStartEvent").bind(requestGPT);
 //script.createEvent("TapEvent").bind(requestGPT);
-script.createEvent("TapEvent").bind(readGPT);
+//script.createEvent("").bind(readGPT);
 print("Tap to call GPT!");

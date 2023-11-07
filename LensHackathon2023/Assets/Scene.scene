@@ -146,6 +146,16 @@
   Enabled: true
   PrefabRemaps:
     []
+- !<DeviceTracking/5d30fdb9-b8c4-42ba-9769-5bce4ba808f0>
+  DeviceTrackingMode: Surface
+  RotationOptions:
+    invertRotation: false
+  SurfaceOptions:
+    enhanceWithNativeAR: false
+  Name: Device Tracking
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<LightSource/72b9e31c-ad03-419f-9fa4-597686e54b03>
   LightType: EnvMap
   DecayType: Quadratic
@@ -183,10 +193,10 @@
     "":
       tts: !<reference.TextToSpeechModule> 0adebb06-b490-46f4-8338-cc1099293e0d
       audio: !<reference.AudioComponent> 53ea1e1f-cbfa-4074-b83b-b5e787e33613
-      autoStyleSelector: true
-      voiceName: Sasha
+      autoStyleSelector: false
+      voiceName: Sam
       voiceStyleSasha: 1
-      voiceStyleSam: 1
+      voiceStyleSam: 2
       voicePace: !<float> 1
       previewTTS: false
       previewText: Show me you love cats without telling me you love cats
@@ -223,6 +233,7 @@
     []
   Components:
     - !<own> d506e1ee-7994-40ca-94dd-1b77044eafeb
+    - !<own> 5d30fdb9-b8c4-42ba-9769-5bce4ba808f0
   PrefabRemaps:
     []
 - !<SceneObject/b64f98b3-1482-4a7f-91f0-c982a414381c>
@@ -244,8 +255,10 @@
   ScriptAsset: !<reference> 1cf62305-6d6c-436d-8c21-0bb7454adcbc
   ScriptInputs:
     "":
-      question: "You are my motivational trainer at muscle beach in the 80s. motivate me through my workout\nI am phsysically at venice beach, I am not imagining it.\n"
+      question: "In one sentence guide me, You are my motivational trainer at muscle beach in the 80s. motivate me through my workout\nI am phsysically at venice beach, I am not imagining it.\n"
       textDisplay: !<reference.Text3D> 1cf5343a-71dd-487a-ae58-35816d9490ce
+      splitPrompt: !<string[]>
+        []
   ScriptTypes:
     "":
       {}
