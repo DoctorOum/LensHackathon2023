@@ -19,7 +19,7 @@ var winner = null
 
 var playerOneTransform
 var playerTwoTransform
-var yFactor = new vec3(0, 1, 0)
+var yFactor = new vec3(0, 3.05, 0)
 
 // TODO Add countdown timer
 
@@ -44,7 +44,7 @@ script.createEvent("UpdateEvent").bind(function () {
     const playerTwoY = playerTwoPos.y
     const playerTwoMarkerY = playerTwoMarkerPos.y
 
-    if (playerOneY > playerOneMarkerY + 1) {
+    if (playerOneY > playerOneMarkerY) {
       print('p1 loses')
       // print(playerOneY)
       // print(playerOneMarkerY)

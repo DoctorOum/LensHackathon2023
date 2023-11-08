@@ -5,7 +5,7 @@
 - !<PassInfo/df203b10-b4d5-4b21-ae23-89d7786aa6b7>
   DepthWrite: true
   DepthTest: true
-  DepthFunction: Never
+  DepthFunction: LessEqual
   TwoSided: false
   ColorMask: {x: true, y: true, z: true, w: true}
   CullMode: Back
@@ -13,11 +13,11 @@
   FrustumCulling: Auto
   InstanceCount: 1
   Defines:
-    - ENABLE_BASE_TEX
     - NODE_13_DROPLIST_ITEM 0
     - NODE_27_DROPLIST_ITEM 0
     - NODE_49_DROPLIST_ITEM 0
     - NODE_69_DROPLIST_ITEM 0
+    - ENABLE_BASE_TEX
   BlendMode: AlphaToCoverage
   Properties:
     Port_Default_N204:

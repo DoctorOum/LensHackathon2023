@@ -13,11 +13,11 @@
     - !<own> de7dcd0f-2d92-46d1-9108-ffb019eef869
     - !<own> b64f98b3-1482-4a7f-91f0-c982a414381c
     - !<own> d5c9872d-bee5-41e7-80e8-5c6bc90575ca
+    - !<own> 621fd726-b175-4251-b554-bcf97ea62b3a
     - !<own> b49fd017-c3f4-45da-b6f3-ea6a4119aa87
     - !<own> 389e0993-ec2b-47ae-bbe3-20eb6d17733f
     - !<own> f6ff5481-05e1-40fe-8775-c9c14a4fab85
     - !<own> fd12159e-4c55-4194-8519-4a9fc2d04409
-    - !<own> 621fd726-b175-4251-b554-bcf97ea62b3a
     - !<own> 54322280-10af-4428-aa78-f57279db00ec
     - !<own> 6e48029c-1630-45d7-9247-7449a7290a33
     - !<own> 46899a10-fb96-4853-aa83-b03af3742574
@@ -1712,12 +1712,12 @@
     []
 - !<SceneObject/54322280-10af-4428-aa78-f57279db00ec>
   Name: PlayerOneBox
-  Enabled: true
+  Enabled: false
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 0, z: 0}
+    position: {x: 0, y: 0, z: 2.1877638118894538e-06}
     rotation: {x: 90, y: -0, z: 0}
-    scale: {x: 0.162433922290802, y: 0.067650675773620605, z: 0.057891469448804855}
+    scale: {x: 0.1898009330034256, y: 0.051751814782619476, z: 0.053706981241703033}
   Children:
     []
   Components:
@@ -2308,7 +2308,7 @@
     []
 - !<SceneObject/6e48029c-1630-45d7-9247-7449a7290a33>
   Name: PlayerTwoBox
-  Enabled: true
+  Enabled: false
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 2.1877638118894538e-06}
@@ -3705,7 +3705,7 @@
   Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 185, z: 0}
+    position: {x: 0, y: 192, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 20, y: 20, z: 20}
   Children:
@@ -4552,9 +4552,9 @@
   Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 185, z: 0}
+    position: {x: 0, y: 192, z: 0}
     rotation: {x: 0, y: -0, z: 0}
-    scale: {x: 20, y: 20, z: 20}
+    scale: {x: 20, y: 20.010000228881836, z: 20}
   Children:
     []
   Components:
