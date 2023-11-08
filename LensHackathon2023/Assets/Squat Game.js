@@ -5,6 +5,12 @@
 //@input Component.Camera perspectiveCamera
 //@input Component.Text playerOneText
 //@input Component.Text playerTwoText
+//@input SceneObject playerOneWinnerSign
+/** @type {SceneObject} */
+var playerOneWinnerSign = script.playerOneWinnerSign;
+//@input SceneObject playerTwoWinnerSign
+/** @type {SceneObject} */
+var playerTwoWinnerSign = script.playerTwoWinnerSign;
 
 
 var isReady = false
@@ -13,7 +19,7 @@ var winner = null
 
 var playerOneTransform
 var playerTwoTransform
-var yFactor = new vec3(0, 0.4, 0)
+var yFactor = new vec3(0, 1, 0)
 
 // TODO Add countdown timer
 
@@ -38,15 +44,16 @@ script.createEvent("UpdateEvent").bind(function () {
     const playerTwoY = playerTwoPos.y
     const playerTwoMarkerY = playerTwoMarkerPos.y
 
-    if (playerOneY > playerOneMarkerY) {
+    if (playerOneY > playerOneMarkerY + 1) {
       print('p1 loses')
       // print(playerOneY)
       // print(playerOneMarkerY)
       // playerOne loses
       playing = false
       winner = "Player Two"
-      script.playerTwoText.text = "Player Two Wins!"
-      script.playerOneText.text = "LOSER!"
+      // script.playerTwoText.text = "Player Two Wins!"
+      //script.playerOneText.text = "LOSER!"
+      playerTwoWinnerSign.enabled = true
       // do winning thing!!!
     }
 
@@ -55,8 +62,9 @@ script.createEvent("UpdateEvent").bind(function () {
       // playerOne loses
       playing = false
       winner = "Player One"
-      script.playerTwoText.text = "Loser!"
-      script.playerOneText.text = "Player One Wins!"
+      // script.playerTwoText.text = "Loser!"
+      // script.playerOneText.text = "Player One Wins!"
+      playerOneWinnerSign.enabled = true
       // do winning thing!!!
     }
   }

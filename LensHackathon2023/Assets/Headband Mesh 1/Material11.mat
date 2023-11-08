@@ -116,7 +116,7 @@
       value: {x: 1, y: 1}
     emissiveFactor:
       typeIdx: 4
-      value: {x: 0, y: 0, z: 0}
+      value: {x: 0.010040436871349812, y: 0.024551765993237495, z: 0.027512015774846077}
     emissiveTexture_offset:
       typeIdx: 3
       value: {x: 1, y: 1}

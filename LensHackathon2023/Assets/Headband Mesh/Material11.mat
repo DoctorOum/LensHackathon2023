@@ -13,9 +13,7 @@
   FrustumCulling: Auto
   InstanceCount: 1
   Defines:
-    - ENABLE_BASE_TEX
     - ENABLE_GLTF_LIGHTING
-    - ENABLE_METALLIC_ROUGHNESS_TEX
     - ENABLE_NORMALMAP
     - ENABLE_NORMAL_TEXTURE_TRANSFORM
     - ENABLE_TEXTURE_TRANSFORM
@@ -23,6 +21,9 @@
     - baseColorTextureUV 0
     - metallicRoughnessTextureUV 0
     - normalTextureUV 0
+    - ENABLE_METALLIC_ROUGHNESS_TEX
+    - ENABLE_SHEEN
+    - ENABLE_BASE_TEX
   BlendMode: Disabled
   Properties:
     Port_Albedo_N405:
@@ -128,7 +129,7 @@
       value: {x: 1, y: 1}
     metallicFactor:
       typeIdx: 1
-      value: 0.30000001192092896
+      value: 0
     metallicRoughnessTexture:
       typeIdx: 9
       value:
@@ -183,7 +184,7 @@
       value: {x: 1, y: 1, z: 1, w: 1}
     normalTextureScale:
       typeIdx: 1
-      value: 0.65999996662139893
+      value: 1
     normalTextureTransform:
       typeIdx: 7
       value:
@@ -222,7 +223,33 @@
       value: 1
     sheenColorFactor:
       typeIdx: 4
-      value: {x: 1, y: 1, z: 1}
+      value: {x: 0, y: 0.03814755380153656, z: 0.059067673981189728}
+    sheenColorTexture:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    sheenColorTextureBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    sheenColorTextureDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    sheenColorTextureTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    sheenColorTextureUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
     sheenColorTexture_offset:
       typeIdx: 3
       value: {x: 1, y: 1}
@@ -235,6 +262,32 @@
     sheenRoughnessFactor:
       typeIdx: 1
       value: 1
+    sheenRoughnessTexture:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    sheenRoughnessTextureBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    sheenRoughnessTextureDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    sheenRoughnessTextureTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    sheenRoughnessTextureUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
     sheenRoughnessTexture_offset:
       typeIdx: 3
       value: {x: 1, y: 1}

@@ -15,9 +15,11 @@
       playerOneMarker: false
       playerOneText: false
       playerOneTrackingPoint: false
+      playerOneWinnerSign: false
       playerTwoMarker: false
       playerTwoText: false
       playerTwoTrackingPoint: false
+      playerTwoWinnerSign: false
     ScriptTypesHidden:
       {}
     DefaultScriptInputs:
