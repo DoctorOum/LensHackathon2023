@@ -1,0 +1,26 @@
+- !<AssetImportMetadata/1b8b0540-d89b-499f-81cc-9c3a1f305297>
+  ImporterSettings: !<AssetImporterSettings/31e34bc0-8c48-470c-88f8-e21e797bb971>
+    {}
+  ImportedAssetIds:
+    .hidden/uber: 5044f8bb-8db7-4c5b-812f-62c051590870
+    .hidden/uber1: e3451b3f-7e4f-45ab-8e96-eb28a8b3893b
+    0006099b-d32d-72fc-0000-000000000f7a: a9bb943e-6de4-4913-8052-997e5e242f52
+    0006099b-d32d-7438-0000-000000000f7b: 1807e710-bad4-4ba2-9921-a1c9cd618a61
+    0006099b-d32d-74ce-0000-000000000f7c: 64dd70a9-ba77-4459-a50a-848d9717eaa6
+    0006099b-d4ba-3b95-0000-000000002030: 994b7455-5786-4da9-9183-d1186c81c09f
+    0006099b-d4ba-3d17-0000-000000002031: 1423bfff-c2b7-4381-9323-5f88d446f703
+    1138f6a7-28ef-4553-ab14-fa43f0b0147b: 0ca73ab2-6620-42fd-9a81-be9a77c187b1
+    253cc495-623b-4a0e-adb0-7c3e5e293b29: b13d7ee5-27eb-4215-b3d1-da69a64db624
+    7b962057-5e7f-4039-9e1f-556903e9793d: 542a0662-1e4d-4281-af1e-400f3d444e56
+    812fc58a-c01f-475e-b896-540c539fb1a2: 98e317b1-48fd-4e1c-a719-cd0d1ecf31f5
+    Beauty: 0a1f9d3b-075e-4e24-b49a-dc4974882f67
+    Color Correction: be6dcdb7-31de-4026-bf58-5b842ec3bca9
+    Scene: 6cc691e6-1303-4ec1-8bd3-7194810acc31
+    Screen Texture: f89a3fcb-0b65-4e09-8510-6e7a02011fb0
+    Screen Texture 2: 7128efc0-4f6f-4fa0-8b10-a005f44a0f92
+    VHS: 74328c49-5605-40e6-8463-d651045b7a6e
+    ffffffff-ffff-ffd6-0000-000000000001: fc4b2f9f-a5b5-4813-a56e-ec4255c564eb
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 6cc691e6-1303-4ec1-8bd3-7194810acc31
+  PackageType: ShouldBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

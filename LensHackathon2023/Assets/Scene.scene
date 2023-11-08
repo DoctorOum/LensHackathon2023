@@ -23,6 +23,7 @@
     - !<own> 46899a10-fb96-4853-aa83-b03af3742574
     - !<own> f812fbcc-4e77-47ed-8bbe-74a7b4b00a1b
     - !<own> 374d5fbe-6244-4493-88f7-718ee91330b1
+    - !<own> 53828228-0658-4c4c-bb66-b02685722663
   Name: Scene
 - !<FaceMaskVisual/010afe86-db53-4c95-a70e-d9b9ff7ee054>
   MainMaterial: !<reference> 781a64b8-5e05-488e-b7af-2ba744d94f12
@@ -443,6 +444,20 @@
     []
   PrefabRemaps:
     []
+- !<SceneObject/152e43a3-2d78-4e13-b604-c664db45934d>
+  Name: VHS
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 69917f97-0793-424d-964f-7b33a51b3076
+  PrefabRemaps:
+    []
 - !<SceneObject/1533e1ab-3609-42c9-b13c-e54d61b73ea6>
   Name: RightHandIndex2
   Enabled: true
@@ -636,6 +651,20 @@
     - !<own> ff0f4df6-3a6b-47c2-9311-0c7f2984ab92
   Components:
     []
+  PrefabRemaps:
+    []
+- !<SceneObject/1decc605-913c-40bf-96b9-3a17f4f06040>
+  Name: Color Correction
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 8c0b646b-8074-4f8f-b3f7-e4bfc76be73d
   PrefabRemaps:
     []
 - !<SceneObject/1ed3cab7-358f-4474-8f8d-330e3796deaa>
@@ -1730,6 +1759,25 @@
     - !<own> 057082bb-eec9-4a5f-b742-f49702ddd8cb
   PrefabRemaps:
     []
+- !<SceneObject/53828228-0658-4c4c-bb66-b02685722663>
+  Name: Effects
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 1decc605-913c-40bf-96b9-3a17f4f06040
+    - !<own> 152e43a3-2d78-4e13-b604-c664db45934d
+  Components:
+    []
+  PrefabRemaps:
+    - 152e43a3-2d78-4e13-b604-c664db45934d: 994b7455-5786-4da9-9183-d1186c81c09f
+    - 1decc605-913c-40bf-96b9-3a17f4f06040: 1807e710-bad4-4ba2-9921-a1c9cd618a61
+    - 53828228-0658-4c4c-bb66-b02685722663: a9bb943e-6de4-4913-8052-997e5e242f52
+    - 69917f97-0793-424d-964f-7b33a51b3076: 1423bfff-c2b7-4381-9323-5f88d446f703
+    - 8c0b646b-8074-4f8f-b3f7-e4bfc76be73d: 64dd70a9-ba77-4459-a50a-848d9717eaa6
 - !<RenderMeshVisual/53a7d97a-ee9e-4726-b36d-02bc074a9627>
   Mesh: !<reference> 17bb9c44-b3fd-4911-bfd6-81dee20bc3af
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2381,6 +2429,13 @@
     []
   PrefabRemaps:
     []
+- !<PostEffectVisual/69917f97-0793-424d-964f-7b33a51b3076>
+  Material: !<reference> 74328c49-5605-40e6-8463-d651045b7a6e
+  RenderOrder: 1
+  Name: Post Effect
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/6a1aae0b-e37f-48ba-87d3-921e6fb2dfde>
   Name: README [See Resources]
   Enabled: true
@@ -2800,6 +2855,13 @@
     []
   PrefabRemaps:
     []
+- !<PostEffectVisual/8c0b646b-8074-4f8f-b3f7-e4bfc76be73d>
+  Material: !<reference> be6dcdb7-31de-4026-bf58-5b842ec3bca9
+  RenderOrder: 0
+  Name: Post Effect
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<SceneObject/8dee9f53-1929-46c5-b50e-ad39c9d63d72>
   Name: LeftHandPinky2
   Enabled: true
@@ -2943,9 +3005,9 @@
 - !<AudioComponent/95269de0-e608-4bc9-a229-2e6a5b72ff9f>
   AudioTrack: !<reference> 915cbbc5-c838-4400-9362-348364993541
   EnableAutoplayLoop: true
-  Volume: 0.53000000000000003
+  Volume: 0.28000000000000003
   EnableMixToSnap: false
-  RecordVolume: 0.59999999999999998
+  RecordVolume: 0.28000000000000003
   EnableSpatialAudio: false
   EnableDistanceEffect: false
   CurveType: Logarithm
@@ -3802,7 +3864,7 @@
     "":
       playOnStart: true
       numberText: !<reference.Text> 45845123-c558-4ebd-b5d7-c6e57edccde2
-      startNumber: 4
+      startNumber: 8
       startSize: 100
       endSize: 350
       interval: !<float> 1
