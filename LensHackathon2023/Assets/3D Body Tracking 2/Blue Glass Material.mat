@@ -1,0 +1,137 @@
+- !<Material/ea3490f5-12b2-451f-bf4b-6f75161def78>
+  PassesInfo:
+    - !<own> a52d4369-5ee9-4319-b5ba-dc2f3f0f7091
+  Name: Blue Glass Material
+- !<PassInfo/a52d4369-5ee9-4319-b5ba-dc2f3f0f7091>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_181_DROPLIST_ITEM 0
+    - NODE_184_DROPLIST_ITEM 0
+    - NODE_221_DROPLIST_ITEM 0
+    - NODE_228_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_315_DROPLIST_ITEM 0
+    - NODE_38_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - NODE_76_DROPLIST_ITEM 0
+    - Tweak_N308
+    - Tweak_N74
+  BlendMode: ColoredGlass
+  Properties:
+    Port_Default_N103:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Default_N134:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Default_N170:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    Port_Default_N173:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Default_N326:
+      typeIdx: 4
+      value: {x: 1, y: 0.999969482421875, z: 0.9999847412109375}
+    Port_Default_N369:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Port_Input2_N072:
+      typeIdx: 1
+      value: 1
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 0.57032120227813721, y: 0.70299839973449707, z: 1, w: 1}
+    materialParamsTex:
+      typeIdx: 9
+      value:
+        id: b7e58ff4-db06-43c3-9f9c-8a25839a7e9b
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    materialParamsTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    materialParamsTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    materialParamsTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    materialParamsTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallic:
+      typeIdx: 1
+      value: 0
+    opacityTex:
+      typeIdx: 9
+      value:
+        id: 2b99cb7f-504c-4b73-a3bb-e338e2bc1620
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    opacityTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    opacityTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    opacityTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    opacityTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    rimColor:
+      typeIdx: 4
+      value: {x: 0.12761120498180389, y: 0.55997556447982788, z: 0.9837491512298584}
+    rimExponent:
+      typeIdx: 1
+      value: 2.2030000686645508
+    rimIntensity:
+      typeIdx: 1
+      value: 0.84700000286102295
+    roughness:
+      typeIdx: 1
+      value: 0
+  Pass: !<reference> 443b540f-10bd-4b40-bf6b-4152f2cf75de
