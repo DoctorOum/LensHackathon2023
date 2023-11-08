@@ -182,7 +182,7 @@
   MaskOnMouthClosed: !<reference> 00000000-0000-0000-0000-000000000000
   RenderOrder: 0
   Name: Face Mask
-  Enabled: true
+  Enabled: false
   PrefabRemaps:
     []
 - !<SceneObject/0c0a298f-c74c-4fb1-8193-f5a9147fe902>
@@ -266,7 +266,9 @@
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
-    []
+    - !<own> 5bded753-e52c-4b47-af81-37e45b624b42
+    - !<own> 5194dc38-c566-483d-a43e-e3f9273dc0d0
+    - !<own> 0c0a298f-c74c-4fb1-8193-f5a9147fe902
   Components:
     - !<own> 010afe86-db53-4c95-a70e-d9b9ff7ee054
   PrefabRemaps:
@@ -683,7 +685,7 @@
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 2, y: 1, z: 1}
+    scale: {x: 20, y: 5, z: 2}
   Children:
     []
   Components:
@@ -998,7 +1000,7 @@
   MaskOnMouthClosed: !<reference> 00000000-0000-0000-0000-000000000000
   RenderOrder: 0
   Name: Face Mask
-  Enabled: true
+  Enabled: false
   PrefabRemaps:
     []
 - !<Head/9c6af4d3-268f-4fa2-890c-918de1243e3c>
@@ -1726,10 +1728,7 @@
     rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
-    - !<own> 5bded753-e52c-4b47-af81-37e45b624b42
     - !<own> 1f5113a0-2ae5-4ff6-bf11-98b0f1adba70
-    - !<own> 5194dc38-c566-483d-a43e-e3f9273dc0d0
-    - !<own> 0c0a298f-c74c-4fb1-8193-f5a9147fe902
   Components:
     - !<own> 9c6af4d3-268f-4fa2-890c-918de1243e3c
   PrefabRemaps:
