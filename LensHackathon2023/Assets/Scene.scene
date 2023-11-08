@@ -2704,6 +2704,7 @@
       voicePace: !<float> 1
       previewTTS: false
       previewText: Show me you love cats without telling me you love cats
+      endTimeText: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -3066,7 +3067,7 @@
       enableScrolling: true
       setMapToCustomLocation: true
       longitude: !<string> -118.4724453
-      latitude: 33.98529052734375
+      latitude: ""
       rotation: !<float> 0
       mapRotated: true
       mapRotationSmoothing: true
@@ -3989,10 +3990,9 @@
   ScriptAsset: !<reference> 1cf62305-6d6c-436d-8c21-0bb7454adcbc
   ScriptInputs:
     "":
-      question: "In one sentence guide me, You are my motivational trainer at muscle beach in the 80s. motivate me through my workout\nI am phsysically at venice beach, I am not imagining it.\n"
+      question: "You are my motivational trainer at muscle beach in the 80s. motivate me through my workout\nI am phsysically at venice beach, "
       textDisplay: !<reference.Text3D> 1cf5343a-71dd-487a-ae58-35816d9490ce
-      splitPrompt: !<string[]>
-        []
+      endTimeText: !<reference.Text3D> 1cf5343a-71dd-487a-ae58-35816d9490ce
   ScriptTypes:
     "":
       {}

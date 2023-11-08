@@ -48,6 +48,7 @@
       voicePace: !<float> 1
       previewTTS: false
       previewText: Show me you love cats without telling me you love cats
+      endTimeText: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}

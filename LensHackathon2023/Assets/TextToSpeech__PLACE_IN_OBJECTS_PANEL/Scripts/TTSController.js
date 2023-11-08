@@ -34,101 +34,101 @@
 const VOICE_PACE_SCALE = 100;
 
 this.countTTS = 0
-var onTTSCompleteHandler = function(audioTrackAsset, wordInfos, phonemeInfos, voiceStyle ) {
+var onTTSCompleteHandler = function (audioTrackAsset, wordInfos, phonemeInfos, voiceStyle) {
 
 
-    // script.endTimeText.text = script.endTimeText.text 
-    //  + "\n\n| onTTSCompleteHandler " +  this.countTTS
-     this.countTTS += 1
+  // script.endTimeText.text = script.endTimeText.text 
+  //  + "\n\n| onTTSCompleteHandler " +  this.countTTS
+  this.countTTS += 1
 
 
-    print("TTS Success");   
-    // script.endTimeText.text = "TTS Success end time: " + wordInfos[wordInfos.length - 1].endTime 
-    
-    global.endTime = wordInfos[wordInfos.length - 1].endTime 
+  print("TTS Success");
+  // script.endTimeText.text = "TTS Success end time: " + wordInfos[wordInfos.length - 1].endTime 
 
-    playTTSAudio(audioTrackAsset, script.audio);
-    // for (var i = 0; i < wordInfos.length; i++) {
-    //    print("word: " + wordInfos[i].word +
-    //    ", startTime: " + wordInfos[i].startTime.toString()+
-    //    ", endTime: " + wordInfos[i].endTime.toString());        
-    // }
+  global.endTime = wordInfos[wordInfos.length - 1].endTime
 
-    script.endTimeText.text = script.endTimeText.text + "\n\n_onTTSCompleteHandler | endTime: " + global.endTime
+  playTTSAudio(audioTrackAsset, script.audio);
+  // for (var i = 0; i < wordInfos.length; i++) {
+  //    print("word: " + wordInfos[i].word +
+  //    ", startTime: " + wordInfos[i].startTime.toString()+
+  //    ", endTime: " + wordInfos[i].endTime.toString());        
+  // }
 
-    global.onTTSSuccessCallback()
+  //script.endTimeText.text = script.endTimeText.text + "\n\n_onTTSCompleteHandler | endTime: " + global.endTime
+
+  global.onTTSSuccessCallback()
 };
 
-var onTTSErrorHandler = function(error,description) {
-    print("TTS Event: Error: " + error + " Description: "+ description);
+var onTTSErrorHandler = function (error, description) {
+  print("TTS Event: Error: " + error + " Description: " + description);
 };
 
 function playTTSAudio(audioTrackAsset, audioComponent) {
-    
-    audioComponent.audioTrack = audioTrackAsset;
-    audioComponent.play(1);
-    
+
+  audioComponent.audioTrack = audioTrackAsset;
+  audioComponent.play(1);
+
 }
 
 
 function getOptions() {
-    var options = TextToSpeech.Options.create();
-    options.voiceName = script.voiceName;
- 
-    if (script.autoStyleSelector) {
-        options.voiceStyle = TextToSpeech.VoiceStyles.Auto;
+  var options = TextToSpeech.Options.create();
+  options.voiceName = script.voiceName;
+
+  if (script.autoStyleSelector) {
+    options.voiceStyle = TextToSpeech.VoiceStyles.Auto;
+  } else {
+    if (script.voiceName === TextToSpeech.VoiceNames.Sasha) {
+      options.voiceStyle = script.voiceStyleSasha;
     } else {
-        if (script.voiceName === TextToSpeech.VoiceNames.Sasha) {
-            options.voiceStyle = script.voiceStyleSasha;
-        } else {
-            options.voiceStyle = script.voiceStyleSam;
-        }
-    }   
-    options.voicePace = script.voicePace*VOICE_PACE_SCALE;
-    return options;
+      options.voiceStyle = script.voiceStyleSam;
+    }
+  }
+  options.voicePace = script.voicePace * VOICE_PACE_SCALE;
+  return options;
 }
 
 
 function getTTSResults(text) {
-    if (script.previewTTS) {
-        print("Alert: Preview TTS Audio might be cut off by a new Audio. Uncheck the Preview TTS to disable the preview.");
-    }
+  if (script.previewTTS) {
+    print("Alert: Preview TTS Audio might be cut off by a new Audio. Uncheck the Preview TTS to disable the preview.");
+  }
 
-    // script.endTimeText.text = "| getTTSResults " +  text
+  // script.endTimeText.text = "| getTTSResults " +  text
 
-    var options = getOptions();
-    script.tts.synthesize(text, options, onTTSCompleteHandler, onTTSErrorHandler);
-    print("TTSEvent: On TTS Create: "+ text); 
+  var options = getOptions();
+  script.tts.synthesize(text, options, onTTSCompleteHandler, onTTSErrorHandler);
+  print("TTSEvent: On TTS Create: " + text);
 }
 
 
 
-var previewTTSErrorHandler = function(error,description) {
-    print("TTS Preview Event: Error: " + error + " Description: "+ description);
+var previewTTSErrorHandler = function (error, description) {
+  print("TTS Preview Event: Error: " + error + " Description: " + description);
 };
 
-var previewTTSCompleteHandler = function(audioTrackAsset, wordInfos, phonemeInfos, voiceStyle) {
-    print("TTS Preview Event: On TTS Complete");  
-    script.audio.audioTrack = audioTrackAsset;
-    script.audio.play(1);
+var previewTTSCompleteHandler = function (audioTrackAsset, wordInfos, phonemeInfos, voiceStyle) {
+  print("TTS Preview Event: On TTS Complete");
+  script.audio.audioTrack = audioTrackAsset;
+  script.audio.play(1);
 };
 
-function initialize() {  
-    if (!script.tts) {
-        print("ERROR: Make sure to set the TTS");
-        return;
-    }
+function initialize() {
+  if (!script.tts) {
+    print("ERROR: Make sure to set the TTS");
+    return;
+  }
 
-    if (!script.audio) {
-        print("ERROR: Make sure to set the Audio Component");
-        return;        
-    }
-    
-    if (script.previewTTS && script.previewText) {
-        var options = getOptions();
-        script.tts.synthesize(script.previewText, options, previewTTSCompleteHandler, previewTTSErrorHandler);
-   
-    }
+  if (!script.audio) {
+    print("ERROR: Make sure to set the Audio Component");
+    return;
+  }
+
+  if (script.previewTTS && script.previewText) {
+    var options = getOptions();
+    script.tts.synthesize(script.previewText, options, previewTTSCompleteHandler, previewTTSErrorHandler);
+
+  }
 
 }
 

@@ -24,8 +24,7 @@
     "":
       question: What are some ideas for Lenses?
       textDisplay: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
-      splitPrompt: !<string[]>
-        []
+      endTimeText: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
