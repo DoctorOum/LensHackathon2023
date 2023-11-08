@@ -3654,7 +3654,7 @@
   Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 180, z: 0}
+    position: {x: 0, y: 190, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 20, y: 20, z: 20}
   Children:
@@ -4461,7 +4461,7 @@
   Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 180, z: 0}
+    position: {x: 0, y: 190, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 20, y: 20, z: 20}
   Children:
@@ -4803,7 +4803,7 @@
     []
 - !<SceneObject/f6ff5481-05e1-40fe-8775-c9c14a4fab85>
   Name: Text3D
-  Enabled: true
+  Enabled: false
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 20}
