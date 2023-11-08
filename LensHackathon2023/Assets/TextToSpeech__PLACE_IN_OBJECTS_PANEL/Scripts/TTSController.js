@@ -29,18 +29,34 @@
 // @input bool previewTTS {"label": "Preview TTS"}
 // @input string previewText {"showIf":"previewTTS"}
 
+// @input Component.Text3D endTimeText
+
 const VOICE_PACE_SCALE = 100;
 
+this.countTTS = 0
 var onTTSCompleteHandler = function(audioTrackAsset, wordInfos, phonemeInfos, voiceStyle ) {
-    
-    print("TTS Success");   
-    playTTSAudio(audioTrackAsset, script.audio);
-    for (var i = 0; i < wordInfos.length; i++) {
-       print("word: " + wordInfos[i].word +
-       ", startTime: " + wordInfos[i].startTime.toString()+
-       ", endTime: " + wordInfos[i].endTime.toString());
-    }
 
+
+    // script.endTimeText.text = script.endTimeText.text 
+    //  + "\n\n| onTTSCompleteHandler " +  this.countTTS
+     this.countTTS += 1
+
+
+    print("TTS Success");   
+    // script.endTimeText.text = "TTS Success end time: " + wordInfos[wordInfos.length - 1].endTime 
+    
+    global.endTime = wordInfos[wordInfos.length - 1].endTime 
+
+    playTTSAudio(audioTrackAsset, script.audio);
+    // for (var i = 0; i < wordInfos.length; i++) {
+    //    print("word: " + wordInfos[i].word +
+    //    ", startTime: " + wordInfos[i].startTime.toString()+
+    //    ", endTime: " + wordInfos[i].endTime.toString());        
+    // }
+
+    script.endTimeText.text = script.endTimeText.text + "\n\n_onTTSCompleteHandler | endTime: " + global.endTime
+
+    global.onTTSSuccessCallback()
 };
 
 var onTTSErrorHandler = function(error,description) {
@@ -77,6 +93,8 @@ function getTTSResults(text) {
     if (script.previewTTS) {
         print("Alert: Preview TTS Audio might be cut off by a new Audio. Uncheck the Preview TTS to disable the preview.");
     }
+
+    // script.endTimeText.text = "| getTTSResults " +  text
 
     var options = getOptions();
     script.tts.synthesize(text, options, onTTSCompleteHandler, onTTSErrorHandler);

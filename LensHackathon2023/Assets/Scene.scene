@@ -3066,7 +3066,7 @@
       enableScrolling: true
       setMapToCustomLocation: true
       longitude: !<string> -118.4724453
-      latitude: "33.9852889 "
+      latitude: 33.98529052734375
       rotation: !<float> 0
       mapRotated: true
       mapRotationSmoothing: true
