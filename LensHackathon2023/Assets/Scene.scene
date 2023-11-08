@@ -205,6 +205,23 @@
     - !<own> ecee85b9-3f2a-4984-b5a9-4b52db2e0b41
   PrefabRemaps:
     []
+- !<AudioComponent/03f12ee1-cc41-47bb-a6e4-91435ba727d5>
+  AudioTrack: !<reference> 915cbbc5-c838-4400-9362-348364993541
+  EnableAutoplayLoop: true
+  Volume: 0.40000000000000002
+  EnableMixToSnap: false
+  RecordVolume: 1
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0
+  MaxDistance: 0
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+  Name: Audio
+  Enabled: true
+  PrefabRemaps:
+    []
 - !<Camera/057082bb-eec9-4a5f-b742-f49702ddd8cb>
   MipmapLevel: 0
   RenderOrder: 3
@@ -1555,6 +1572,20 @@
     - !<own> 324292b5-fcfb-4207-8d64-b789c4bd9bed
   Components:
     - !<own> 057082bb-eec9-4a5f-b742-f49702ddd8cb
+  PrefabRemaps:
+    []
+- !<SceneObject/53beef0f-b751-45a4-83b2-cd7bfd4510e6>
+  Name: Audio Track
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 03f12ee1-cc41-47bb-a6e4-91435ba727d5
   PrefabRemaps:
     []
 - !<AudioComponent/53ea1e1f-cbfa-4074-b83b-b5e787e33613>
