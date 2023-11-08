@@ -1,9 +1,0 @@
-- !<AssetImportMetadata/4d74cd52-8c12-4585-8c87-ed9c4f65aef8>
-  ImporterSettings: !<AssetImporterSettings/2c0e7a65-8427-42de-977e-89dd90bbc18a>
-    {}
-  ImportedAssetIds:
-    BodyTracking3DAsset: fe1ddf2c-e23a-4ebc-91a3-ac6791f5a3c0
-  ImporterName: BodyTracking3DAssetImporter
-  PrimaryAsset: !<reference> fe1ddf2c-e23a-4ebc-91a3-ac6791f5a3c0
-  PackageType: CannotBeUnpacked
-  AssetData: !<own> 00000000-0000-0000-0000-000000000000

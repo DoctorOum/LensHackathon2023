@@ -1,0 +1,159 @@
+- !<Material/a4f50814-dd1c-4f24-9cb3-f8728e2d0dda>
+  PassesInfo:
+    - !<own> 2646c2cd-29bd-482d-9efa-19e504ddaf50
+  Name: Spaceman Material Blue
+- !<PassInfo/2646c2cd-29bd-482d-9efa-19e504ddaf50>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_AO_N006:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    Port_Exponent_N007:
+      typeIdx: 1
+      value: 2
+    Port_Intensity_N007:
+      typeIdx: 1
+      value: 0.5
+    Port_Normal_N007:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 1}
+    Port_Opacity_N006:
+      typeIdx: 1
+      value: 1
+    Port_SpecularAO_N006:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    Port_Value_N011:
+      typeIdx: 5
+      value: {x: 1, y: 0.50276952981948853, z: 1, w: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    Tweak_N12:
+      typeIdx: 9
+      value:
+        id: 1889f6bc-2d70-40fb-a986-1d9c0769eada
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    Tweak_N12BorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Tweak_N12Dims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Tweak_N12Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    Tweak_N12UvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Tweak_N2:
+      typeIdx: 9
+      value:
+        id: 5be58f1a-db17-40f8-9252-d6267ec93def
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: false
+    Tweak_N2BorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Tweak_N2Dims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Tweak_N2Transform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    Tweak_N2UvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 368fe3ab-3f8f-4868-941f-f1eebee42e3c
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    normalTex:
+      typeIdx: 9
+      value:
+        id: f7c244dd-cca3-401e-af51-51143d5a2b76
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    normalTexBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    normalTexDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    normalTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    normalTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+  Pass: !<reference> f8c83c5c-1802-472e-9845-b6e9aada30e4

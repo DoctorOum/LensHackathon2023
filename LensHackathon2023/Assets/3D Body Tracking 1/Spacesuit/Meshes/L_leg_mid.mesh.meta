@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/6c5efaf2-fc81-41ff-8e15-8b2a57bdd99e>
+  ImporterSettings: !<AssetImporterSettings/dcd1adf4-05b6-4b62-8f88-f34a283b715f>
+    {}
+  ImportedAssetIds:
+    FileMesh: c579329d-7982-4aba-ab37-3a828e1482dc
+  ImporterName: FileMeshImporter
+  PrimaryAsset: !<reference> c579329d-7982-4aba-ab37-3a828e1482dc
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

@@ -1,0 +1,32 @@
+- !<Material/f1851137-da5d-4431-b807-d8c23e60d088>
+  PassesInfo:
+    - !<own> ecedb65b-4077-42e7-8d27-fb9480ab499f
+  Name: Graph Occluder
+- !<PassInfo/ecedb65b-4077-42e7-8d27-fb9480ab499f>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: false, y: false, z: false, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - Tweak_N1
+    - Tweak_N6
+  BlendMode: Disabled
+  Properties:
+    Port_Input1_N002:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    Port_Input1_N008:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+  Pass: !<reference> 419ee3ab-9145-4807-a2cf-75ef993e855c
