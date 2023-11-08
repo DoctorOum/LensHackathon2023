@@ -30,7 +30,7 @@
       value: 0
     baseColor:
       typeIdx: 5
-      value: {x: 0.88593882322311401, y: 0.99800103902816772, z: 0.31688410043716431, w: 1}
+      value: {x: 0.49741360545158386, y: 0.9705653190612793, z: 0.93942165374755859, w: 1}
     baseTex:
       typeIdx: 9
       value:
@@ -59,11 +59,11 @@
       value: {x: 1, y: 1, z: 1, w: 1}
     metallic:
       typeIdx: 1
-      value: 0.20999999344348907
+      value: 0
     receivesRayTracedReflections:
       typeIdx: 2
       value: false
     roughness:
       typeIdx: 1
-      value: 0.87999999523162842
+      value: 0
   Pass: !<reference> 0c87fc12-96db-482a-8304-eedfd9aa62aa

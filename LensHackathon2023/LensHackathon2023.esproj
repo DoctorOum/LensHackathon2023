@@ -6,9 +6,9 @@ studioVersion:
 sceneId: 1e4cae11-cf66-49fa-b479-1f6bf46388cc
 viewConfig:
   simulation:
-    device: No Simulation
-    cameraFov: 66.519996643066406
-    fullFrameAspect: .nan
+    device: iPhone X
+    cameraFov: 39.576999664306641
+    fullFrameAspect: 0.53799998760223389
     viewport: Normal
     output: Live
   cameraType: Front

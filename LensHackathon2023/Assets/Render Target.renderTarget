@@ -1,8 +1,8 @@
 - !<RenderTarget/2b873e67-1067-46a2-8192-933c33081dd3>
   UseScreenResolution: true
-  AntialiasingMode: Disabled
+  AntialiasingMode: FXAA
   DepthBuffer: Auto
-  MSAAStrategy: OnlyWhenRequired
+  MSAAStrategy: Default
   ClearColorOption: CustomTexture
   Resolution:
     x: 900
