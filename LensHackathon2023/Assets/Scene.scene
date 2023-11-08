@@ -22,6 +22,7 @@
     - !<own> 6e48029c-1630-45d7-9247-7449a7290a33
     - !<own> 46899a10-fb96-4853-aa83-b03af3742574
     - !<own> f812fbcc-4e77-47ed-8bbe-74a7b4b00a1b
+    - !<own> 374d5fbe-6244-4493-88f7-718ee91330b1
   Name: Scene
 - !<FaceMaskVisual/010afe86-db53-4c95-a70e-d9b9ff7ee054>
   MainMaterial: !<reference> 781a64b8-5e05-488e-b7af-2ba744d94f12
@@ -205,23 +206,6 @@
     - !<own> ecee85b9-3f2a-4984-b5a9-4b52db2e0b41
   PrefabRemaps:
     []
-- !<AudioComponent/03f12ee1-cc41-47bb-a6e4-91435ba727d5>
-  AudioTrack: !<reference> 915cbbc5-c838-4400-9362-348364993541
-  EnableAutoplayLoop: true
-  Volume: 0.40000000000000002
-  EnableMixToSnap: false
-  RecordVolume: 1
-  EnableSpatialAudio: false
-  EnableDistanceEffect: false
-  CurveType: Logarithm
-  MinDistance: 0
-  MaxDistance: 0
-  EnableDirectivityEffect: false
-  EnablePositionEffect: false
-  Name: Audio
-  Enabled: true
-  PrefabRemaps:
-    []
 - !<Camera/057082bb-eec9-4a5f-b742-f49702ddd8cb>
   MipmapLevel: 0
   RenderOrder: 3
@@ -365,7 +349,7 @@
   ShadowDensity: 1
   RenderOrder: 0
   Name: Render Mesh Visual
-  Enabled: true
+  Enabled: false
   PrefabRemaps:
     []
 - !<SceneObject/116fbe84-205f-431c-914e-862890c32d4f>
@@ -946,6 +930,20 @@
     []
   PrefabRemaps:
     []
+- !<SceneObject/374d5fbe-6244-4493-88f7-718ee91330b1>
+  Name: Audio
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 95269de0-e608-4bc9-a229-2e6a5b72ff9f
+  PrefabRemaps:
+    []
 - !<SceneObject/3804c659-198d-43c6-ad9e-84a5f061e4db>
   Name: LeftShoulder
   Enabled: true
@@ -1274,7 +1272,7 @@
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: -0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
     - !<own> 5df9ee13-9f7a-4b08-bafa-0899885a8ce6
@@ -1572,20 +1570,6 @@
     - !<own> 324292b5-fcfb-4207-8d64-b789c4bd9bed
   Components:
     - !<own> 057082bb-eec9-4a5f-b742-f49702ddd8cb
-  PrefabRemaps:
-    []
-- !<SceneObject/53beef0f-b751-45a4-83b2-cd7bfd4510e6>
-  Name: Audio Track
-  Enabled: true
-  Layer: 0
-  LocalTransform:
-    position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0}
-    scale: {x: 1, y: 1, z: 1}
-  Children:
-    []
-  Components:
-    - !<own> 03f12ee1-cc41-47bb-a6e4-91435ba727d5
   PrefabRemaps:
     []
 - !<AudioComponent/53ea1e1f-cbfa-4074-b83b-b5e787e33613>
@@ -2469,7 +2453,7 @@
   ShadowDensity: 1
   RenderOrder: 0
   Name: Render Mesh Visual
-  Enabled: true
+  Enabled: false
   PrefabRemaps:
     []
 - !<ScreenRegionComponent/84fb7579-b9bd-47a6-9b3f-53949ee4389e>
@@ -2733,6 +2717,23 @@
     "":
       {}
   Name: OnComplete_EDIT_ME
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<AudioComponent/95269de0-e608-4bc9-a229-2e6a5b72ff9f>
+  AudioTrack: !<reference> 915cbbc5-c838-4400-9362-348364993541
+  EnableAutoplayLoop: true
+  Volume: 0.53000000000000003
+  EnableMixToSnap: false
+  RecordVolume: 0.59999999999999998
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0
+  MaxDistance: 0
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+  Name: Audio
   Enabled: true
   PrefabRemaps:
     []
@@ -3650,10 +3651,10 @@
     []
 - !<SceneObject/bf75fa05-719b-4b39-b4de-fba85148f36e>
   Name: Sphere
-  Enabled: false
+  Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 167.83587646484375, z: 0}
+    position: {x: 0, y: 180, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 20, y: 20, z: 20}
   Children:
@@ -4457,10 +4458,10 @@
     []
 - !<SceneObject/e0aea46c-13ba-4dd3-ae50-04596a0e4455>
   Name: Sphere
-  Enabled: false
+  Enabled: true
   Layer: 0
   LocalTransform:
-    position: {x: 0, y: 167.83587646484375, z: 0}
+    position: {x: 0, y: 180, z: 0}
     rotation: {x: 0, y: -0, z: 0}
     scale: {x: 20, y: 20, z: 20}
   Children:
@@ -4865,7 +4866,7 @@
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: -0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
     - !<own> 6187d5ba-55a3-4645-8a14-0f4a2a6d81e9
