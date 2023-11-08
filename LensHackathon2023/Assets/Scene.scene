@@ -1174,7 +1174,7 @@
     "":
       playOnStart: true
       numberText: !<reference.Text> 45845123-c558-4ebd-b5d7-c6e57edccde2
-      startNumber: 5
+      startNumber: 10
       startSize: 100
       endSize: 350
       interval: !<float> 1
