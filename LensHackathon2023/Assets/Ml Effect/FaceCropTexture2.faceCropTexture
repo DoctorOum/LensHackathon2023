@@ -1,0 +1,6 @@
+- !<FaceCropTexture/ea5f9289-641a-46da-8948-92505ca75a51>
+  InputTexture: !<reference> f68f0693-61ce-4c24-8db1-a6db8225691b
+  Scale: {x: 1, y: 1}
+  FaceIndex: 0
+  FaceCenterMouthWeight: 0.10000000149011612
+  Name: FaceCropTexture2

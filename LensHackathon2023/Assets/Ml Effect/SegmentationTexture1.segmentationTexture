@@ -1,0 +1,6 @@
+- !<SegmentationTexture/aeddd681-6cfb-44a9-b190-6c810b987844>
+  SegmentationType: Body
+  InvertMask: false
+  Feathering: 0.5
+  RefineEdge: true
+  Name: SegmentationTexture1

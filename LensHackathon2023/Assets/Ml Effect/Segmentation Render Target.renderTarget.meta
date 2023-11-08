@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/987471b5-6fdf-46c8-9c32-2c7b5d5f6202>
+  ImporterSettings: !<AssetImporterSettings/26ed9275-029f-41ce-a98d-59b36cfbcfe5>
+    {}
+  ImportedAssetIds:
+    RenderTarget: f68f0693-61ce-4c24-8db1-a6db8225691b
+  ImporterName: RenderTargetImporter
+  PrimaryAsset: !<reference> f68f0693-61ce-4c24-8db1-a6db8225691b
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

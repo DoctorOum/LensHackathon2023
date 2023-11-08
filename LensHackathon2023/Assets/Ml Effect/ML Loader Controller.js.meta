@@ -1,0 +1,27 @@
+- !<AssetImportMetadata/d049bba1-6c1e-45bd-b94f-eb6a67014b52>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/4ca58d05-8ee7-4846-923b-33ecd129ea14>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      loadingSpinner: false
+      mlEffects: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - mlEffects: !<reference.ScriptComponent[]>
+          []
+        loadingSpinner: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ImportedAssetIds:
+    JavaScriptAsset: e8997893-6316-4359-9e49-9870cd083d09
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> e8997893-6316-4359-9e49-9870cd083d09
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

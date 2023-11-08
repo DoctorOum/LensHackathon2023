@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/b4082d9a-c4c1-4dd7-9c9a-59e7f2d066aa>
+  ImporterSettings: !<MLAssetImporterSettings/a5a90b5c-e447-4690-883b-5db1040a007d>
+    {}
+  ImportedAssetIds:
+    MLAsset: e69a5b62-b5a2-42c7-9d1a-36e05a471602
+  ImporterName: MLAssetImporter
+  PrimaryAsset: !<reference> e69a5b62-b5a2-42c7-9d1a-36e05a471602
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

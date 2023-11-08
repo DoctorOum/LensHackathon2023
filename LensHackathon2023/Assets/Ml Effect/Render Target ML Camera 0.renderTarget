@@ -1,4 +1,4 @@
-- !<RenderTarget/2b873e67-1067-46a2-8192-933c33081dd3>
+- !<RenderTarget/0f2a15a5-1545-4de4-8ef7-931249ebe2ce>
   UseScreenResolution: true
   AntialiasingMode: Disabled
   DepthBuffer: Auto
@@ -8,5 +8,5 @@
     x: 900
     y: 1600
   ClearColor: {x: 0, y: 0, z: 0, w: 0}
-  InputTexture: !<reference> 162c711e-31c3-43f5-93a6-834b4534ee10
-  Name: Render Target
+  InputTexture: !<reference> f68f0693-61ce-4c24-8db1-a6db8225691b
+  Name: Render Target1

@@ -1,0 +1,15 @@
+- !<AssetImportMetadata/a16ea6c4-555f-434a-be3b-5bbba06dd9e2>
+  ImporterSettings: !<AssetImporterSettings/45006bb4-5986-4ead-a706-d431ceb92f6b>
+    {}
+  ImportedAssetIds:
+    .hidden/uber: 9802bcf4-5e5a-48ab-8e85-ad7f5c2bc247
+    1b8fdc28-2019-4d38-9102-aa9f8143a86c: bcab6e20-8ac0-40e3-b878-3ce346a09c7e
+    2cbcf829-76c5-4aab-8b85-7374d2204df4: 72174a97-c193-4a53-a913-68540b794c2b
+    GraphWarp: 70541f97-e204-4f9c-af3e-30a5cede335d
+    ML Face Effect Component: 6022c769-8e13-4901-ae39-af5df6219868
+    Screen Texture: f6974ab5-5ec4-4f99-a1a5-c3e389d3071d
+    mask: 7d033afe-17cd-43c8-9ba9-f6bfc3cd0a18
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 6022c769-8e13-4901-ae39-af5df6219868
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

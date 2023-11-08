@@ -1,0 +1,25 @@
+- !<AssetImportMetadata/17bdac2e-cc39-4ce5-9198-6ab32856a287>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/222b76ce-f783-463f-ba15-eabd4125f9e0>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      mlEffects: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - mlEffects: !<reference.ScriptComponent[]>
+          []
+  ImportedAssetIds:
+    JavaScriptAsset: 2140a56f-749b-4728-9fbb-1efa73e523d1
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 2140a56f-749b-4728-9fbb-1efa73e523d1
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000
