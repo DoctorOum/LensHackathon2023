@@ -3006,7 +3006,7 @@
   AudioTrack: !<reference> 915cbbc5-c838-4400-9362-348364993541
   EnableAutoplayLoop: true
   Volume: 0.28000000000000003
-  EnableMixToSnap: false
+  EnableMixToSnap: true
   RecordVolume: 0.28000000000000003
   EnableSpatialAudio: false
   EnableDistanceEffect: false
