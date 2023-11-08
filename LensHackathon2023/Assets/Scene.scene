@@ -182,7 +182,7 @@
   MaskOnMouthClosed: !<reference> 00000000-0000-0000-0000-000000000000
   RenderOrder: 0
   Name: Face Mask
-  Enabled: false
+  Enabled: true
   PrefabRemaps:
     []
 - !<SceneObject/0c0a298f-c74c-4fb1-8193-f5a9147fe902>
@@ -372,7 +372,7 @@
   OverflowVertical: Overflow
   OverflowHorizontal: Overflow
   DepthTest: false
-  FontSize: 48
+  FontSize: 62
   Fill:
     mode: Solid
     color: {x: 1, y: 1, z: 1, w: 1}
@@ -1000,7 +1000,7 @@
   MaskOnMouthClosed: !<reference> 00000000-0000-0000-0000-000000000000
   RenderOrder: 0
   Name: Face Mask
-  Enabled: false
+  Enabled: true
   PrefabRemaps:
     []
 - !<Head/9c6af4d3-268f-4fa2-890c-918de1243e3c>
@@ -1041,7 +1041,7 @@
     []
 - !<SceneObject/aa85f510-0fe1-4030-b6cd-e348f5aad289>
   Name: Face Occluder
-  Enabled: false
+  Enabled: true
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
@@ -1174,7 +1174,7 @@
     "":
       playOnStart: true
       numberText: !<reference.Text> 45845123-c558-4ebd-b5d7-c6e57edccde2
-      startNumber: 10
+      startNumber: 4
       startSize: 100
       endSize: 350
       interval: !<float> 1
@@ -1211,7 +1211,7 @@
   ScriptAsset: !<reference> c0812cdb-f92f-45ad-87e9-9417602deeee
   ScriptInputs:
     "":
-      triggeringEventType: objectTrackingEvent
+      triggeringEventType: TurnOnEvent
       touchEventEventType: TapEvent
       touchEventTouchTarget: !<reference.BaseMeshVisual> 00000000-0000-0000-0000-000000000000
       faceEventEventType: MouthOpenedEvent
@@ -1644,7 +1644,7 @@
   Layer: 0
   LocalTransform:
     position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: -0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
     scale: {x: 1, y: 1, z: 1}
   Children:
     - !<own> 235c95b3-cdff-4931-8d3d-060143a77be9
