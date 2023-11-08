@@ -11,8 +11,8 @@
     CurrentVisibility: Editable
     MaxVisibility: Editable
     ScriptInputsHidden:
+      endTimeText: false
       question: false
-      splitPrompt: false
       textDisplay: false
     ScriptTypesHidden:
       {}
@@ -21,6 +21,8 @@
         textDisplay: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
         splitPrompt: !<string[]>
           []
+        endTime: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+        endTimeText: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
   ImportedAssetIds:
     JavaScriptAsset: 1cf62305-6d6c-436d-8c21-0bb7454adcbc
   ImporterName: JavaScriptAssetImporter

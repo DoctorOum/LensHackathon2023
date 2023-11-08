@@ -13,6 +13,7 @@
     ScriptInputsHidden:
       audio: false
       autoStyleSelector: false
+      endTimeText: false
       previewTTS: false
       previewText: false
       tts: false
