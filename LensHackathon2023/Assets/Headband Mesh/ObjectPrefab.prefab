@@ -1,0 +1,96 @@
+- !<ObjectPrefab/c4dc8d80-56b1-4b9b-b76d-617ce57b4943>
+  LazyLoading: false
+  RetainAssets: true
+  objects:
+    - !<own> edc8769c-6f12-4c74-94b9-b409afb2a425
+  Name: ""
+- !<RenderMeshVisual/2ae47de4-6ea0-4bda-9d30-04503b1c3259>
+  Mesh: !<reference> 43ccb7a4-c76f-49a9-9be8-449020a95da5
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  Materials:
+    - !<reference> 686414cb-d7d6-4cda-ae5a-8631a70d1eb0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1, y: 1, z: 1, w: 1}
+  ShadowDensity: 1
+  RenderOrder: 0
+  Name: component_2
+  Enabled: true
+  PrefabRemaps:
+    []
+- !<SceneObject/41a3d2d2-cbc1-467d-af44-36702bf2a6ac>
+  Name: Headband
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 13.365992546081543, z: 1.9167671203613281}
+    rotation: {x: 0, y: -0, z: 0}
+    scale: {x: 7.5411028861999512, y: 9.687347412109375, z: 9.687347412109375}
+  Children:
+    - !<own> a711260d-b161-41eb-9677-7375518dba7b
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/82ca47e0-c66f-4995-a23f-0a9e0659655b>
+  Name: sceneObject_3
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    []
+  Components:
+    - !<own> 2ae47de4-6ea0-4bda-9d30-04503b1c3259
+  PrefabRemaps:
+    []
+- !<SceneObject/86e17a33-654c-4f3a-bd8e-5f5462e219a4>
+  Name: Scene0
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 82ca47e0-c66f-4995-a23f-0a9e0659655b
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/a711260d-b161-41eb-9677-7375518dba7b>
+  Name: Scenes
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 86e17a33-654c-4f3a-bd8e-5f5462e219a4
+  Components:
+    []
+  PrefabRemaps:
+    []
+- !<SceneObject/edc8769c-6f12-4c74-94b9-b409afb2a425>
+  Name: Headband
+  Enabled: true
+  Layer: 0
+  LocalTransform:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  Children:
+    - !<own> 41a3d2d2-cbc1-467d-af44-36702bf2a6ac
+  Components:
+    []
+  PrefabRemaps:
+    []

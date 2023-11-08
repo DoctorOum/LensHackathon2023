@@ -13,7 +13,7 @@ var winner = null
 
 var playerOneTransform
 var playerTwoTransform
-var yFactor = new vec3(0, 4, 0)
+var yFactor = new vec3(0, 3.5, 0)
 
 // TODO Add countdown timer
 

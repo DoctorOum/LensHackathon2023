@@ -1,0 +1,24 @@
+- !<AssetImportMetadata/d0da6666-0d08-4b93-8ae7-6d38686ccc5e>
+  ImporterSettings: !<JavaScriptAssetImporterSettings/77660fa8-1173-4b7f-b59e-4839c5a0b9f3>
+    Icon: ""
+    Description: ""
+    InternalVersion: 0
+    VersionMajor: 0
+    VersionMinor: 0
+    VersionPatch: 0
+    ComponentUid: 00000000-0000-0000-0000-000000000000
+    ExportUid: 00000000-0000-0000-0000-000000000000
+    CurrentVisibility: Editable
+    MaxVisibility: Editable
+    ScriptInputsHidden:
+      mesh: false
+    ScriptTypesHidden:
+      {}
+    DefaultScriptInputs:
+      - mesh: !<reference.BaseMeshVisual> 00000000-0000-0000-0000-000000000000
+  ImportedAssetIds:
+    JavaScriptAsset: 6153242d-dd4b-44a7-a23f-66964781373d
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 6153242d-dd4b-44a7-a23f-66964781373d
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

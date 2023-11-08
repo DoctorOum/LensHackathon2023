@@ -1,0 +1,13 @@
+- !<FaceMesh/417922e9-36f8-4f60-b857-d5097e481ed5>
+  FaceIndex: 0
+  Options:
+    face: true
+    eye: true
+    eyeCorner: true
+    mouth: true
+    skull: true
+  ExternalMesh: !<reference> 00000000-0000-0000-0000-000000000000
+  ExternalScale: 1
+  ExpressionMultiplier: 1
+  ExternalMeshMapUV: Texcoord0
+  Name: Face Mesh

@@ -1,0 +1,9 @@
+- !<AssetImportMetadata/7f4805a6-ee9a-4b20-bc3c-051ab7f112d8>
+  ImporterSettings: !<AssetImporterSettings/318b1940-5f3a-46f9-87a2-c5ba5eea0e4c>
+    {}
+  ImportedAssetIds:
+    FaceMesh: 46c2ab47-729f-4000-81df-d753935b2723
+  ImporterName: FaceMeshImporter
+  PrimaryAsset: !<reference> 46c2ab47-729f-4000-81df-d753935b2723
+  PackageType: CannotBeUnpacked
+  AssetData: !<own> 00000000-0000-0000-0000-000000000000

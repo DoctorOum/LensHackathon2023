@@ -1,0 +1,25 @@
+- !<Material/7bbf8540-a91c-48dd-85db-4dfa33af485a>
+  PassesInfo:
+    - !<own> 5c8aafca-106e-4f80-b46c-3bcaee8555a0
+  Name: Occluder Graph
+- !<PassInfo/5c8aafca-106e-4f80-b46c-3bcaee8555a0>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: false, y: false, z: false, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+  Pass: !<reference> 1a4fd603-5f12-4f53-a93e-3b143be0b1c8

@@ -1,0 +1,256 @@
+- !<Material/cc3e6df1-71ed-4deb-889a-1180b584babf>
+  PassesInfo:
+    - !<own> 0a5bc79d-b5e5-4520-a0f4-aba7f5f3bdd2
+  Name: Material11
+- !<PassInfo/0a5bc79d-b5e5-4520-a0f4-aba7f5f3bdd2>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: false}
+  CullMode: Back
+  PolygonOffset: {x: 0, y: 0}
+  FrustumCulling: Auto
+  InstanceCount: 1
+  Defines:
+    - ENABLE_BASE_TEX
+    - ENABLE_GLTF_LIGHTING
+    - ENABLE_METALLIC_ROUGHNESS_TEX
+    - ENABLE_NORMALMAP
+    - baseColorTextureUV 0
+    - metallicRoughnessTextureUV 0
+    - normalTextureUV 0
+  BlendMode: Disabled
+  Properties:
+    Port_Albedo_N405:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_DebugSheenEnvLightMult_N003:
+      typeIdx: 1
+      value: 1
+    Port_DebugSheenPunctualLightMult_N003:
+      typeIdx: 1
+      value: 1
+    Port_Emissive_N405:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    Port_Metallic_N405:
+      typeIdx: 1
+      value: 0
+    Port_Opacity_N405:
+      typeIdx: 1
+      value: 1
+    Port_SpecularAO_N036:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    Port_SpecularAO_N405:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColorFactor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseColorTexture:
+      typeIdx: 9
+      value:
+        id: f3f9fc95-4ab8-4572-8011-4356d67f9787
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: MirroredRepeat
+          wrapModeV: MirroredRepeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    baseColorTextureBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseColorTextureDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    baseColorTextureTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    baseColorTextureUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    clearcoatFactor:
+      typeIdx: 1
+      value: 0
+    clearcoatNormalTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    clearcoatNormalTexture_rotation:
+      typeIdx: 1
+      value: 1
+    clearcoatNormalTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    clearcoatRoughnessFactor:
+      typeIdx: 1
+      value: 0
+    clearcoatRoughnessTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    clearcoatRoughnessTexture_rotation:
+      typeIdx: 1
+      value: 1
+    clearcoatRoughnessTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    clearcoatTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    clearcoatTexture_rotation:
+      typeIdx: 1
+      value: 1
+    clearcoatTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    emissiveFactor:
+      typeIdx: 4
+      value: {x: 0, y: 0, z: 0}
+    emissiveTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    emissiveTexture_rotation:
+      typeIdx: 1
+      value: 1
+    emissiveTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    metallicFactor:
+      typeIdx: 1
+      value: 0.30000001192092896
+    metallicRoughnessTexture:
+      typeIdx: 9
+      value:
+        id: 8ed64243-7ee2-4b5d-a2d0-dec74fff0300
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: MirroredRepeat
+          wrapModeV: MirroredRepeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    metallicRoughnessTextureBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallicRoughnessTextureDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallicRoughnessTextureTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    metallicRoughnessTextureUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    metallicRoughnessTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    metallicRoughnessTexture_rotation:
+      typeIdx: 1
+      value: 1
+    metallicRoughnessTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    normalTexture:
+      typeIdx: 9
+      value:
+        id: 3fb6928f-8489-4e62-8f86-60a6e48ea9d8
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: MirroredRepeat
+          wrapModeV: MirroredRepeat
+          wrapModeW: Repeat
+          borderColor: {x: 0, y: 0, z: 0, w: 0}
+          mipmaps: true
+    normalTextureBorderColor:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    normalTextureDims:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    normalTextureScale:
+      typeIdx: 1
+      value: 1
+    normalTextureTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1, y: 0, z: 0}
+        1: {x: 0, y: 1, z: 0}
+        2: {x: 0, y: 0, z: 1}
+    normalTextureUvMinMax:
+      typeIdx: 5
+      value: {x: 1, y: 1, z: 1, w: 1}
+    normalTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    normalTexture_rotation:
+      typeIdx: 1
+      value: 1
+    normalTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    occlusionTextureStrength:
+      typeIdx: 1
+      value: 1
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    receivesRayTracedReflections:
+      typeIdx: 2
+      value: false
+    roughnessFactor:
+      typeIdx: 1
+      value: 1
+    sheenColorFactor:
+      typeIdx: 4
+      value: {x: 1, y: 1, z: 1}
+    sheenColorTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    sheenColorTexture_rotation:
+      typeIdx: 1
+      value: 1
+    sheenColorTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    sheenRoughnessFactor:
+      typeIdx: 1
+      value: 1
+    sheenRoughnessTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    sheenRoughnessTexture_rotation:
+      typeIdx: 1
+      value: 1
+    sheenRoughnessTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    transmissionFactor:
+      typeIdx: 1
+      value: 0
+    transmissionTexture_offset:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+    transmissionTexture_rotation:
+      typeIdx: 1
+      value: 1
+    transmissionTexture_scale:
+      typeIdx: 3
+      value: {x: 1, y: 1}
+  Pass: !<reference> c41bfd80-6988-4e20-9128-c5ed07b0328b
